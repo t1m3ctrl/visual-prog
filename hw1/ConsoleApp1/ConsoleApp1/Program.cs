@@ -56,7 +56,7 @@ namespace project
         {
             if (balance < _lowBalanceValue)
             {
-                Console.WriteLine($"class SNSLowBalanceNotifyer balance is low: {balance}\n");
+                Console.WriteLine($"class SMSLowBalanceNotifyer balance is low: {balance}\n");
             }
         }
     }
@@ -72,11 +72,31 @@ namespace project
             Console.WriteLine($"class EMailBalanceChangedNotifyer balance changed: {balance}\n");
         }
     }
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Account Student = new Account(5);
+            Account student = new Account(5);
+            EMailBalanceChangedNotifyer mail_notification = new EMailBalanceChangedNotifyer("example@mail.com");
+            SMSLowBalanceNotifyer sms_notification = new SMSLowBalanceNotifyer("+73247835757", 2);
+            student.AddNotifyer(mail_notification);
+            student.AddNotifyer(sms_notification);
+            student.ChangeBalance(10);
+            student.ChangeBalance(15);
+            student.ChangeBalance(1);
+
+            Console.WriteLine("Press any key to continue..\n");
+            Console.ReadKey(true);
+
+            Account another_student = new Account();
+            another_student.ChangeBalance(1000);
+            EMailBalanceChangedNotifyer mail_notification1 = new EMailBalanceChangedNotifyer("example2@mail.com");
+            SMSLowBalanceNotifyer sms_notification1 = new SMSLowBalanceNotifyer("+73247848989", 100);
+            another_student.AddNotifyer(mail_notification1);
+            another_student.AddNotifyer(sms_notification1);
+            another_student.ChangeBalance(800);
+            another_student.ChangeBalance(300);
+            another_student.ChangeBalance(-5);
         }
 
     }
