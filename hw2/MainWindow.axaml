@@ -16,24 +16,23 @@
 			<Setter Property="HorizontalContentAlignment" Value="Center"/>
 			<Setter Property="BorderThickness" Value="2"/>
 			<Setter Property="BorderBrush" Value="Black"/>
-			<Setter Property="Margin" Value="5"/>
 		</Style>
 	</Window.Styles>
 	
-	<Grid ColumnDefinitions="1*, 0.1*, 2*">
+	<Grid ColumnDefinitions="0.33*, 0.01*, 0.66*">
 		<Border Grid.Column="0">
 			<ScrollViewer>
 				<StackPanel>
-					<Button Click="ClickHandler" Content="Khaki"/>
-					<Button Click="ClickHandler" Content="Red"/>
-					<Button Click="ClickHandler" Content="MediumVioletRed"/>
-					<Button Click="ClickHandler" Content="Bisque"/>
-					<Button Click="ClickHandler" Content="LemonChiffon"/>
-					<Button Click="ClickHandler" Content="PowderBlue"/>
-					<Button Click="ClickHandler" Content="MintCream"/>
-					<Button Click="ClickHandler" Content="Maroon"/>
-					<Button Click="ClickHandler" Content="RosyBrown"/>
-					<Button Click="ClickHandler" Content="LightPink"/>
+					<Button Click="ClickHandler" Content="Khaki" Background="Khaki"/>
+					<Button Click="ClickHandler" Content="Red" Background="Red"/>
+					<Button Click="ClickHandler" Content="MediumVioletRed" Background="MediumVioletRed"/>
+					<Button Click="ClickHandler" Content="Bisque" Background="Bisque"/>
+					<Button Click="ClickHandler" Content="LemonChiffon" Background="LemonChiffon"/>
+					<Button Click="ClickHandler" Content="PowderBlue" Background="PowderBlue"/>
+					<Button Click="ClickHandler" Content="MintCream" Background="MintCream"/>
+					<Button Click="ClickHandler" Content="Maroon" Background="Maroon"/>
+					<Button Click="ClickHandler" Content="RosyBrown" Background="RosyBrown"/>
+					<Button Click="ClickHandler" Content="LightPink" Background="LightPink"/>
 				</StackPanel>
 			</ScrollViewer>
 		</Border>
