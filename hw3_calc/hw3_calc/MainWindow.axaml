@@ -4,13 +4,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="555"
         x:Class="hw3_calc.MainWindow"
-        Title="hw3_calc"
+		xmlns:con="clr-namespace:Calculator"
+		x:DataType="con:CalculatorViewModel"
+		
+		Title="Calculator"
 		Width="320"
         Height="555"
         MinWidth="320"
         MinHeight="555">
-	
+
+	<Design.DataContext>
+		<con:CalculatorViewModel/>
+	</Design.DataContext>
+
+	<Window.DataContext>
+		<con:CalculatorViewModel/>
+	</Window.DataContext>
+
 	<Window.Styles>
+		<Style Selector="Window">
+			<Setter Property="FontFamily" Value="Seegoe"/>
+		</Style>
 		<Style Selector="Button">
 			<Setter Property="HorizontalAlignment" Value="Stretch"/>
 			<Setter Property="VerticalAlignment" Value="Stretch"/>
@@ -18,32 +32,31 @@
 			<Setter Property="MinHeight" Value="50"/>
 			<Setter Property="FontSize" Value="20"/>
 			<Setter Property="FontWeight" Value="500"/>
-			<Setter Property="FontFamily" Value="Seegoe"/>
 			<Setter Property="HorizontalContentAlignment" Value="Center"/>
 			<Setter Property="VerticalContentAlignment" Value="Center"/>
-			<Setter Property="Background" Value="#c2c0c0" />
 			<Setter Property="Foreground" Value="Black" />
+			<Setter Property="Background" Value="#c2c0c0" />
+			<Setter Property="Command" Value="{Binding ButtonClickedCommand}" />
 		</Style>
 	</Window.Styles>
 
 	<Grid RowDefinitions="50*, 100*, 400*">
 		
-		<TextBox Grid.Row="0"
-				 MinWidth="320"
-				 MinHeight="50"
-				 Foreground="Gray"
-				 TextAlignment="Right"
-				 FontSize="14"
-				 FontFamily="Seegoe"
-				 IsReadOnly="True"/>
+		<TextBlock Text="{Binding HistoryValue}"
+			       Grid.Row="0"
+				   MinWidth="320"
+				   MinHeight="50"
+				   Foreground="Gray"
+				   TextAlignment="End"
+				   FontSize="14"/>
 		
-		<TextBox Grid.Row="1"
-				 MinWidth="320"
-				 MinHeight="100"
-				 TextAlignment="Right"
-				 FontSize="24"
-				 FontFamily="Seegoe"
-				 IsReadOnly="True"/>
+		<TextBlock Text="{Binding DisplayValue}"
+			       Grid.Row="1"
+				   MinWidth="320"
+				   MinHeight="100"
+				   TextAlignment="End"
+				   TextTrimming="CharacterEllipsis"
+				   FontSize="38"/>
 		
 		<Grid Grid.Row="2"
 			  MinWidth="320"
@@ -53,121 +66,124 @@
 
 			<Button Grid.Row="0" 
 					Grid.Column="0"
-					Content="n!"/>
+					Content="!" CommandParameter="fact"/>
 			<Button Grid.Row="0"
 					Grid.Column="1"
-					Content="CE"/>
+					Content="CE" CommandParameter="CE"/>
 			<Button Grid.Row="0"
 					Grid.Column="2"
-					Content="C"/>
+					Content="C" CommandParameter="C"/>
 			<Button Grid.Row="0"
-					Grid.Column="3">
+					Grid.Column="3"
+					Content="clr" CommandParameter="clr">
 				<Image Source="D:\dev\projects\vuz\visual-prog\hw3_calc\hw3_calc\res\arrow.png" 
 					   Width="25"/>
 			</Button>
 
 			<Button Grid.Row="1"
 					Grid.Column="0"
-					Content="ln"/>
+					Content="ln" CommandParameter="ln"/>
 			<Button Grid.Row="1"
 					Grid.Column="1"
-					Content="lg"/>
+					Content="lg" CommandParameter="lg"/>
 			<Button Grid.Row="1"
 					Grid.Column="2"
-					Content="floor"/>
+					Content="floor" CommandParameter="floor"/>
 			<Button Grid.Row="1"
 					Grid.Column="3"
-					Content="ceil"/>
+					Content="ceil" CommandParameter="ceil"/>
 			
 			<Button Grid.Row="2"
 					Grid.Column="0"
-					Content="π"/>
+					Content="" CommandParameter=""
+					IsEnabled="False"/>
 			<Button Grid.Row="2"
 					Grid.Column="1"
-					Content="sin"/>
+					Content="sin" CommandParameter="sin"/>
 			<Button Grid.Row="2"
 					Grid.Column="2"
-					Content="cos"/>
+					Content="cos" CommandParameter="cos"/>
 			<Button Grid.Row="2"
 					Grid.Column="3"
-					Content="tan"/>
+					Content="tan" CommandParameter="tan"/>
 			
 			<Button Grid.Row="3"
 					Grid.Column="0"
-					Content="e"/>
+					Content="" CommandParameter=""
+					IsEnabled="False"/>
 			<Button Grid.Row="3"
 					Grid.Column="1"
-					Content="^"/>
+					Content="^" CommandParameter="^"/>
 			<Button Grid.Row="3"
 					Grid.Column="2"
-					Content="mod"/>
+					Content="mod" CommandParameter="mod"/>
 			<Button Grid.Row="3"
 					Grid.Column="3"
-					Content="/"/>
+					Content="/" CommandParameter="/"/>
 			
 			<Button Grid.Row="4"
 					Grid.Column="0"
-					Content="7"
+					Content="7"  CommandParameter="7"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="4"
 					Grid.Column="1"
-					Content="8"
+					Content="8" CommandParameter="8"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="4"
 					Grid.Column="2"
-					Content="9"
+					Content="9" CommandParameter="9"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="4"
 					Grid.Column="3"
-					Content="x"/>
+					Content="x" CommandParameter="x"/>
 			
 			<Button Grid.Row="5"
 					Grid.Column="0"
-					Content="4"
+					Content="4" CommandParameter="4"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="5"
 					Grid.Column="1"
-					Content="5"
+					Content="5" CommandParameter="5"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="5"
 					Grid.Column="2"
-					Content="6"
+					Content="6" CommandParameter="6"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="5"
 					Grid.Column="3"
-					Content="-"/>
+					Content="-" CommandParameter="-"/>
 			
 			<Button Grid.Row="6"
 					Grid.Column="0"
-					Content="1"
+					Content="1" CommandParameter="1"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="6"
 					Grid.Column="1"
-					Content="2"
+					Content="2" CommandParameter="2"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="6"
 					Grid.Column="2"
-					Content="3"
+					Content="3" CommandParameter="3"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="6"
 					Grid.Column="3"
-					Content="+"/>
+					Content="+" CommandParameter="+"/>
 			
 			<Button Grid.Row="7"
 					Grid.Column="0"
-					Content="+/-"
+					Content="+/-" CommandParameter="+/-"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="7"
 					Grid.Column="1"
-					Content="0"
+					Content="0" CommandParameter="0"
 					Background="#e3e3e3"/>
 			<Button Grid.Row="7"
 					Grid.Column="2"
-					Content=","
+					Content="," CommandParameter=","
 					Background="#e3e3e3"/>
 			<Button Grid.Row="7"
 					Grid.Column="3"
-					Content="="
+					Content="=" CommandParameter="="
 					Background="#f777f1"
 					Foreground="#e3e3e3"/>
 			
