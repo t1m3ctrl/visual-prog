@@ -43,6 +43,8 @@ public class CalculatorViewModel : INotifyPropertyChanged
             {
                 if (!string.IsNullOrEmpty(DisplayValue)) 
                 {
+                    if (typingNextValue) PerformOperation();
+
                     lastOperation = text;
                     previousValue = currentValue;
                     HistoryValue = $"{previousValue} {lastOperation} ";
@@ -55,6 +57,8 @@ public class CalculatorViewModel : INotifyPropertyChanged
             {
                 if (!string.IsNullOrEmpty(DisplayValue))
                 {
+                    if (typingNextValue) PerformOperation();
+
                     lastOperation = text;
                     previousValue = currentValue;
                     HistoryValue = $"{lastOperation}({previousValue})";
@@ -138,7 +142,10 @@ public class CalculatorViewModel : INotifyPropertyChanged
                 if (currentValue != 0)
                     previousValue /= currentValue;
                 else
+                {
                     DisplayValue = "Cannot divide by zero!";
+                    previousValue = currentValue;
+                }
                 break;
             case "^":
                 HistoryValue = $"{previousValue} {lastOperation} {currentValue} =";
@@ -191,6 +198,7 @@ public class CalculatorViewModel : INotifyPropertyChanged
         }
         currentValue = previousValue;
         DisplayValue = currentValue.ToString();
+        typingNextValue = false;
     }
 
     public event PropertyChangedEventHandler? PropertyChanged;

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hw3_calc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70197d644885f75f56ab7d757f88e3faf7e415ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9af5a6f37586ad60f428f1011e03677ef39b6604")]
 [assembly: System.Reflection.AssemblyProductAttribute("hw3_calc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hw3_calc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
