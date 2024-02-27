@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		xmlns:local="clr-namespace:FileExplorer"
+        x:Class="hw4_file_explorer.MainWindow"
+        x:DataType="local:DataContextMainWindow"
+		Title="File Explorer"
+	    Width="800" Height="600">
+
+	<Window.DataContext>
+		<local:DataContextMainWindow/>
+	</Window.DataContext>
+
+	<Design.DataContext>
+		<local:DataContextMainWindow/>
+	</Design.DataContext>
+
+	<StackPanel>
+		<TextBlock Text="{Binding CurrentDirectory}" FontSize="18" Margin="10"/>
+		<ListBox ItemsSource="{Binding Collection}" DoubleTapped="DoubleTappedCommand">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Grid ColumnDefinitions="0.05*, *">
+						<!--<Image Width="32" Height="32" Source="{Binding IconSelector}"/>-->
+						<TextBlock Grid.Column="1" Text="{Binding}"/>
+					</Grid>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+	</StackPanel>
+	
+	
+</Window>
