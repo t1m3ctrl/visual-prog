@@ -17,19 +17,22 @@
 		<local:DataContextMainWindow/>
 	</Design.DataContext>
 
-	<StackPanel>
-		<TextBlock Text="{Binding CurrentDirectory}" FontSize="18" Margin="10"/>
-		<ListBox ItemsSource="{Binding Collection}" DoubleTapped="DoubleTappedCommand">
-			<ListBox.ItemTemplate>
-				<DataTemplate>
-					<Grid ColumnDefinitions="0.05*, *">
-						<!--<Image Width="32" Height="32" Source="{Binding IconSelector}"/>-->
-						<TextBlock Grid.Column="1" Text="{Binding}"/>
-					</Grid>
-				</DataTemplate>
-			</ListBox.ItemTemplate>
-		</ListBox>
-	</StackPanel>
-	
-	
+	<ScrollViewer>
+		<StackPanel>
+			<TextBlock Text="{Binding CurrentDirectory}" FontSize="18" Margin="10"/>
+			<ListBox ItemsSource="{Binding Collection}" DoubleTapped="DoubleTappedCommand">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<Grid ColumnDefinitions="0.05*, *">
+							<Image Grid.Column="0" Width="40" Height="40" Margin="0,0,15,0" Source="{Binding IconPath}" Stretch="Uniform"/>
+							<TextBlock Grid.Column="1" Text="{Binding Name}" VerticalAlignment="Center"/>
+						</Grid>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+		</StackPanel>
+	</ScrollViewer>
+
+
+
 </Window>

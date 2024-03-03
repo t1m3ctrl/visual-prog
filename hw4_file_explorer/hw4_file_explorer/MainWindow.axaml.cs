@@ -17,9 +17,9 @@ namespace hw4_file_explorer
         {
             if (sender is ListBox listBox && listBox.DataContext is DataContextMainWindow dcMainWindow)
             {
-                if (e.Source is Control control && control.DataContext is string str)
+                if (e.Source is Control control && control.DataContext is FileItem item)
                 {
-                    dcMainWindow.ItemDoubleClick(str);
+                    dcMainWindow.ItemDoubleClick(item.Name);
                 }
             }
         }

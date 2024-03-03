@@ -76,7 +76,7 @@
 			<Button Grid.Row="0"
 					Grid.Column="3"
 					Content="clr" CommandParameter="clr">
-				<Image Source="D:\dev\projects\vuz\visual-prog\hw3_calc\hw3_calc\res\arrow.png" 
+				<Image Source="D:\\dev\\projects\\vuz\\visual-prog\\hw3_calc\\hw3_calc\\res\arrow.png" 
 					   Width="25"/>
 			</Button>
 
