@@ -36,7 +36,7 @@ namespace hw5_file_explorer
             Collection = new ObservableCollection<FileItem>();
             foreach (string drive in Directory.GetLogicalDrives())
             {
-                Collection.Add(new FileItem { Name = drive, Path = "Open" ,IconPath = new Avalonia.Media.Imaging.Bitmap("D:\\Sdev\\projects\\vuz\\visual-prog\\hw5_file_explorer\\hw5_file_explorer\\res\\disk.png"), Type = "drive" });
+                Collection.Add(new FileItem { Name = drive, Path = "Open" ,IconPath = new Avalonia.Media.Imaging.Bitmap("D:\\dev\\projects\\vuz\\visual-prog\\hw5_file_explorer\\hw5_file_explorer\\res\\disk.png"), Type = "drive" });
             }
             CurrentDirectory = "Drives";
             UpdateCollection();
