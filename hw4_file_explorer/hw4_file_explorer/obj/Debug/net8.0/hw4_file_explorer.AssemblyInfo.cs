@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hw4_file_explorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a4628955b456d03c6be4063a9761aaf6f010656")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5274f104ef9e873758b139e2ccf15e223c663e33")]
 [assembly: System.Reflection.AssemblyProductAttribute("hw4_file_explorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hw4_file_explorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

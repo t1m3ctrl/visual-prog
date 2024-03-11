@@ -18,25 +18,20 @@ using System.Windows.Input;
 
 namespace hw5_file_explorer
 {
-    public class FileItem
-    {
-        public string Name { get; set; }
-        public string Path { get; set; }
-        public Avalonia.Media.Imaging.Bitmap IconPath { get; set; }
-        public string Type { get; set; }
-    }
     internal class DataContextMainWindow : BaseModel
     {
         private string _currentDirectory;
         private ObservableCollection<FileItem> _collection;
         private bool _showDrives = true;
         private Avalonia.Media.Imaging.Bitmap _image;
+
+        private IconSetter _iconSetter = new IconSetter();
         public DataContextMainWindow()
         {
             Collection = new ObservableCollection<FileItem>();
             foreach (string drive in Directory.GetLogicalDrives())
             {
-                Collection.Add(new FileItem { Name = drive, Path = "Open" ,IconPath = new Avalonia.Media.Imaging.Bitmap("D:\\dev\\projects\\vuz\\visual-prog\\hw5_file_explorer\\hw5_file_explorer\\res\\disk.png"), Type = "drive" });
+                Collection.Add(new FileItem { Name = drive, Path = "Open" , Icon = _iconSetter.SetIcon("drive"), Type = "drive" });
             }
             CurrentDirectory = "Drives";
             UpdateCollection();
@@ -62,22 +57,22 @@ namespace hw5_file_explorer
 
             if (!_showDrives)
             {
-                Collection.Add(new FileItem { Name = "..", Path = "Back",IconPath = new Avalonia.Media.Imaging.Bitmap("D:\\dev\\projects\\vuz\\visual-prog\\hw5_file_explorer\\hw5_file_explorer\\res\\upload.png"), Type = "back" });
+                Collection.Add(new FileItem { Name = "..", Path = "Back", Icon = _iconSetter.SetIcon("back"), Type = "back" });
 
                 try
                 {
                     foreach (var directory in Directory.GetDirectories(CurrentDirectory))
                     {
-                        Collection.Add(new FileItem { Name = Path.GetFileName(directory), Path = directory, IconPath = new Avalonia.Media.Imaging.Bitmap("D:\\dev\\projects\\vuz\\visual-prog\\hw5_file_explorer\\hw5_file_explorer\\res\\folder.png"), Type = "folder" });
+                        Collection.Add(new FileItem { Name = Path.GetFileName(directory), Path = directory, Icon = _iconSetter.SetIcon("folder"), Type = "folder" });
                         Console.WriteLine($"{directory}");
                     }
                     foreach (var file in Directory.GetFiles(CurrentDirectory))
                     {
                         string extension = Path.GetExtension(file);
                         if (extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".gif" || extension == ".bmp")
-                            Collection.Add(new FileItem { Name = Path.GetFileName(file), Path = file, IconPath = new Avalonia.Media.Imaging.Bitmap("D:\\dev\\projects\\vuz\\visual-prog\\hw5_file_explorer\\hw5_file_explorer\\res\\document.png"), Type = "image" });
+                            Collection.Add(new FileItem { Name = Path.GetFileName(file), Path = file, Icon = _iconSetter.SetIcon("image"), Type = "image" });
                         else
-                            Collection.Add(new FileItem { Name = Path.GetFileName(file), Path = file, IconPath = new Avalonia.Media.Imaging.Bitmap("D:\\dev\\projects\\vuz\\visual-prog\\hw5_file_explorer\\hw5_file_explorer\\res\\document.png"), Type = "file" });
+                            Collection.Add(new FileItem { Name = Path.GetFileName(file), Path = file, Icon = _iconSetter.SetIcon("document"), Type = "file" });
                     }
                 }
                 catch (UnauthorizedAccessException ex)
@@ -91,7 +86,7 @@ namespace hw5_file_explorer
                 foreach (string drive in Directory.GetLogicalDrives())
                 {
                     Console.WriteLine($"{drive}");
-                    Collection.Add(new FileItem { Name = drive, Path = "Open", IconPath = new Avalonia.Media.Imaging.Bitmap("D:\\dev\\projects\\vuz\\visual-prog\\hw5_file_explorer\\hw5_file_explorer\\res\\disk.png"), Type = "drive" });
+                    Collection.Add(new FileItem { Name = drive, Path = "Open", Icon = _iconSetter.SetIcon("drive"), Type = "drive" });
                 }
             }
         }
