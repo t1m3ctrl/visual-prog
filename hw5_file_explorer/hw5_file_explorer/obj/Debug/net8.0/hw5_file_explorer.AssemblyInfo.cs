@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hw5_file_explorer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5274f104ef9e873758b139e2ccf15e223c663e33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd66a04641cf78c66ce4fec13d18f5739c0bd5e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("hw5_file_explorer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hw5_file_explorer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
