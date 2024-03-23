@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "WeatherApp/1.0.0": {
         "dependencies": {
+          "AnimatedImage.Avalonia": "1.0.7",
           "Avalonia": "11.0.6",
           "Avalonia.Desktop": "11.0.6",
           "Avalonia.Diagnostics": "11.0.6",
@@ -17,6 +18,21 @@
         },
         "runtime": {
           "WeatherApp.dll": {}
+        }
+      },
+      "AnimatedImage.Avalonia/1.0.7": {
+        "dependencies": {
+          "Avalonia": "11.0.6"
+        },
+        "runtime": {
+          "lib/net6.0/AnimatedImage.Avalonia.dll": {
+            "assemblyVersion": "1.0.7.0",
+            "fileVersion": "1.0.7.0"
+          },
+          "lib/net6.0/AnimatedImage.dll": {
+            "assemblyVersion": "1.0.7.0",
+            "fileVersion": "1.0.7.0"
+          }
         }
       },
       "Avalonia/11.0.6": {
@@ -931,6 +947,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AnimatedImage.Avalonia/1.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-frWmZj+j1rfq3mOifDcqPEYNPJza4z4Js2lIWlJevJpSnqa+mxtBcIzFHuTlUSUyYQBhNE9sfJhBB9qfLCKuXg==",
+      "path": "animatedimage.avalonia/1.0.7",
+      "hashPath": "animatedimage.avalonia.1.0.7.nupkg.sha512"
     },
     "Avalonia/11.0.6": {
       "type": "package",

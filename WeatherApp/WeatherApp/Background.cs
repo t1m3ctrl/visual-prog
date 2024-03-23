@@ -11,7 +11,14 @@ namespace WeatherApp
     {
         private Avalonia.Media.Imaging.Bitmap _backgroundDay = ImageSetter.SetImage("light");
         private Avalonia.Media.Imaging.Bitmap _backgroundNight = ImageSetter.SetImage("dark");
+        private Avalonia.Media.Imaging.Bitmap _backgroundLoad = ImageSetter.SetImage("bgload");
         private Avalonia.Media.Imaging.Bitmap _backgroundCurrent;
+
+        public Avalonia.Media.Imaging.Bitmap BackgroundLoad
+        {
+            get => _backgroundLoad;
+            set => _ = SetField(ref _backgroundLoad, value);
+        }
 
         public Avalonia.Media.Imaging.Bitmap BackgroundDay
         {
@@ -30,6 +37,7 @@ namespace WeatherApp
             get => _backgroundCurrent;
             set => _ = SetField(ref _backgroundCurrent, value);
         }
+
 
         public void SetBackground(long unix_time, long sunrise, long sunset)
         {

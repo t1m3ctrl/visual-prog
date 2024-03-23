@@ -24,6 +24,13 @@ namespace WeatherApp
         private GeoData _geoData;
         private ObservableCollection<WeatherDataCompressed> _weatherDataList;
         private Background _bg;
+        private bool _isLoading;
+
+        public bool IsLoading 
+        {
+            get => _isLoading;
+            set => _ = SetField(ref _isLoading, value);
+        }
 
         public Background BG
         {
@@ -47,10 +54,10 @@ namespace WeatherApp
         }
         public DataContextMainWindow()
         {
+            BG = new Background();
             WeatherData = new WeatherData {City = "Novosibirsk"};
             GeoData = new GeoData();
             WeatherDataList = new ObservableCollection<WeatherDataCompressed>();
-            BG = new Background();
 
             GetForecast(WeatherData.City);
 
@@ -133,7 +140,6 @@ namespace WeatherApp
                     string response = await client.GetStringAsync($"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={ApiKey}&units=metric");
                     JObject json = JObject.Parse(response);
                     long TZoffset = (long)json["city"]["timezone"];
-                    Debug.WriteLine($"TZ OFFSET = {TZoffset}");
 
                     WeatherDataList.Clear();
 
@@ -176,17 +182,29 @@ namespace WeatherApp
         }
         public async Task GetForecast(string city)
         {
-            await GetGeoAsync(city);
-            await GetWeatherAsync(GeoData.lat, GeoData.lon);
-            await GetWeather5Async(GeoData.lat, GeoData.lon);
+            try
+            {
+                IsLoading = true;
+                await GetGeoAsync(city);
+                await GetWeatherAsync(GeoData.lat, GeoData.lon);
+                await GetWeather5Async(GeoData.lat, GeoData.lon);
+            }
+            catch (Exception ex) 
+            {
+                Debug.WriteLine($"Ошибка при получении данных: {ex.Message}");
+            }
+            finally
+            {
+                IsLoading = false;
+            }
         }
-        public async Task UpdateForecast(string text) 
+        public void UpdateForecast(string text) 
         {
-            await GetForecast(text);
+            GetForecast(text);
         }
-        public async Task ReloadForecast(object sender)
+        public void ReloadForecast(object sender)
         {
-            await GetForecast(WeatherData.City);
+            GetForecast(WeatherData.City);
         }
     }
 }

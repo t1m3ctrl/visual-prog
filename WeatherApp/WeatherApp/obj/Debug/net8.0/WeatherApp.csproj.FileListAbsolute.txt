@@ -131,3 +131,5 @@ D:\dev\projects\vuz\visual-prog\WeatherApp\WeatherApp\obj\Debug\net8.0\WeatherAp
 D:\dev\projects\vuz\visual-prog\WeatherApp\WeatherApp\obj\Debug\net8.0\WeatherApp.genruntimeconfig.cache
 D:\dev\projects\vuz\visual-prog\WeatherApp\WeatherApp\obj\Debug\net8.0\ref\WeatherApp.dll
 D:\dev\projects\vuz\visual-prog\WeatherApp\WeatherApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\dev\projects\vuz\visual-prog\WeatherApp\WeatherApp\bin\Debug\net8.0\AnimatedImage.Avalonia.dll
+D:\dev\projects\vuz\visual-prog\WeatherApp\WeatherApp\bin\Debug\net8.0\AnimatedImage.dll

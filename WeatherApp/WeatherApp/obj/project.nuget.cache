@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rtfrhelp6SBEw37h/rlddjcM/BCqT7BnGoDFQxtmxy+rDTPn1IJAV17IcmNRbwXhyDFirRveYUAqMPU7ojbBOg==",
+  "dgSpecHash": "XNi542TZJVnVfRpYCohaKo1ue97ueImpwL6n+018v+Bn67fi/gYjjMbLPJcZ/VLsXes7tnFS9z/qOK0YKEi5Ug==",
   "success": true,
   "projectFilePath": "D:\\dev\\projects\\vuz\\visual-prog\\WeatherApp\\WeatherApp\\WeatherApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\t1m3c\\.nuget\\packages\\animatedimage.avalonia\\1.0.7\\animatedimage.avalonia.1.0.7.nupkg.sha512",
     "C:\\Users\\t1m3c\\.nuget\\packages\\avalonia\\11.0.6\\avalonia.11.0.6.nupkg.sha512",
     "C:\\Users\\t1m3c\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2023020321\\avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",
     "C:\\Users\\t1m3c\\.nuget\\packages\\avalonia.buildservices\\0.0.29\\avalonia.buildservices.0.0.29.nupkg.sha512",
