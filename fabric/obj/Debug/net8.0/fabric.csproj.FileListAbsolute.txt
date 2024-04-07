@@ -1,0 +1,17 @@
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\fabric.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\fabric.AssemblyInfoInputs.cache
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\fabric.AssemblyInfo.cs
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\fabric.csproj.CoreCompileInputs.cache
+D:\dev\projects\vuz\test\fabric\bin\Debug\net8.0\fabric.exe
+D:\dev\projects\vuz\test\fabric\bin\Debug\net8.0\fabric.deps.json
+D:\dev\projects\vuz\test\fabric\bin\Debug\net8.0\fabric.runtimeconfig.json
+D:\dev\projects\vuz\test\fabric\bin\Debug\net8.0\fabric.dll
+D:\dev\projects\vuz\test\fabric\bin\Debug\net8.0\fabric.pdb
+D:\dev\projects\vuz\test\fabric\bin\Debug\net8.0\System.Reactive.dll
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\fabric.csproj.AssemblyReference.cache
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\fabric.csproj.CopyComplete
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\fabric.dll
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\refint\fabric.dll
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\fabric.pdb
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\fabric.genruntimeconfig.cache
+D:\dev\projects\vuz\test\fabric\obj\Debug\net8.0\ref\fabric.dll

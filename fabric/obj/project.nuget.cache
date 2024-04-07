@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IU4I6PC7tlYXXxGKD4Q7DenMArV9lyPkNuwVs0bDjKL7KHUUUmYP6CgQFq3gmGFWaaj6P4elv9qUdKFWjQz/qQ==",
+  "success": true,
+  "projectFilePath": "D:\\dev\\projects\\vuz\\test\\fabric\\fabric.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\t1m3c\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
