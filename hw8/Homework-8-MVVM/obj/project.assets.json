@@ -4859,11 +4859,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\t1m3c\\OneDrive\\Рабочий стол\\hw8\\Homework-8-MVVM\\hw8.csproj",
+      "projectUniqueName": "D:\\dev\\projects\\vuz\\visual-prog\\hw8\\Homework-8-MVVM\\hw8.csproj",
       "projectName": "hw8",
-      "projectPath": "C:\\Users\\t1m3c\\OneDrive\\Рабочий стол\\hw8\\Homework-8-MVVM\\hw8.csproj",
+      "projectPath": "D:\\dev\\projects\\vuz\\visual-prog\\hw8\\Homework-8-MVVM\\hw8.csproj",
       "packagesPath": "C:\\Users\\t1m3c\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\t1m3c\\OneDrive\\Рабочий стол\\hw8\\Homework-8-MVVM\\obj\\",
+      "outputPath": "D:\\dev\\projects\\vuz\\visual-prog\\hw8\\Homework-8-MVVM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\dev\\sdk\\msvc\\NuGetPackages"

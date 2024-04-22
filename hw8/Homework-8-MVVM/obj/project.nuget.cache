@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WBk+gDhLL/oeEux1HkkQenBoyv0EcUy8rjTlCnpF4l1cHD9og751GhBai9HJNG1ZDtO/0v8+ZfUCMrPGIRxT2g==",
+  "dgSpecHash": "5C39a3GlcQyTOMjwpeRAmQ3/aqdz2knuHomzbzOMifBjdOE11sZSKBdUvyvPcDnXVzGA1Ww90lMEt96hTN7e4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\t1m3c\\OneDrive\\Рабочий стол\\hw8\\Homework-8-MVVM\\hw8.csproj",
+  "projectFilePath": "D:\\dev\\projects\\vuz\\visual-prog\\hw8\\Homework-8-MVVM\\hw8.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\t1m3c\\.nuget\\packages\\avalonia\\11.0.10\\avalonia.11.0.10.nupkg.sha512",
     "C:\\Users\\t1m3c\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2023020321\\avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",

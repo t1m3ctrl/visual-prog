@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GGQo2MCDdqdUN6lNHJygZuxLZzEweNg7vUDOpacf6gzvEPxILRueCSRjjA2WYUZ7xayGbb5YufmkZ2YP66wKfQ==",
+  "dgSpecHash": "xhdqvdJmhg2sZm6IExEO1NKpRLwtLAda92v/IvoLBjbhrWdJJ5dGuwlRlC/MZN1NshJjYLuNbYH7LHX5aDW/JA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\t1m3c\\OneDrive\\Рабочий стол\\hw9\\VolumeSliderAvalonia\\VolumeSliderAvalonia.csproj",
+  "projectFilePath": "D:\\dev\\projects\\vuz\\visual-prog\\hw9\\VolumeSliderAvalonia\\VolumeSliderAvalonia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\t1m3c\\.nuget\\packages\\avalonia\\11.0.6\\avalonia.11.0.6.nupkg.sha512",
     "C:\\Users\\t1m3c\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2023020321\\avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",

@@ -13,18 +13,18 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = hw8
-build_property.ProjectDir = C:\Users\t1m3c\OneDrive\Рабочий стол\hw8\Homework-8-MVVM\
+build_property.ProjectDir = D:\dev\projects\vuz\visual-prog\hw8\Homework-8-MVVM\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/t1m3c/OneDrive/Рабочий стол/hw8/Homework-8-MVVM/App.axaml]
+[D:/dev/projects/vuz/visual-prog/hw8/Homework-8-MVVM/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/t1m3c/OneDrive/Рабочий стол/hw8/Homework-8-MVVM/Views/MainWindow.axaml]
+[D:/dev/projects/vuz/visual-prog/hw8/Homework-8-MVVM/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/t1m3c/OneDrive/Рабочий стол/hw8/Homework-8-MVVM/Views/Pages/DataGridPage.axaml]
+[D:/dev/projects/vuz/visual-prog/hw8/Homework-8-MVVM/Views/Pages/DataGridPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/t1m3c/OneDrive/Рабочий стол/hw8/Homework-8-MVVM/Views/Pages/TreeViewPage.axaml]
+[D:/dev/projects/vuz/visual-prog/hw8/Homework-8-MVVM/Views/Pages/TreeViewPage.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

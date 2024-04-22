@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\t1m3c\\OneDrive\\Рабочий стол\\hw9\\VolumeSliderAvalonia\\VolumeSliderAvalonia.csproj": {}
+    "D:\\dev\\projects\\vuz\\visual-prog\\hw9\\VolumeSliderAvalonia\\VolumeSliderAvalonia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\t1m3c\\OneDrive\\Рабочий стол\\hw9\\VolumeSliderAvalonia\\VolumeSliderAvalonia.csproj": {
+    "D:\\dev\\projects\\vuz\\visual-prog\\hw9\\VolumeSliderAvalonia\\VolumeSliderAvalonia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\t1m3c\\OneDrive\\Рабочий стол\\hw9\\VolumeSliderAvalonia\\VolumeSliderAvalonia.csproj",
+        "projectUniqueName": "D:\\dev\\projects\\vuz\\visual-prog\\hw9\\VolumeSliderAvalonia\\VolumeSliderAvalonia.csproj",
         "projectName": "VolumeSliderAvalonia",
-        "projectPath": "C:\\Users\\t1m3c\\OneDrive\\Рабочий стол\\hw9\\VolumeSliderAvalonia\\VolumeSliderAvalonia.csproj",
+        "projectPath": "D:\\dev\\projects\\vuz\\visual-prog\\hw9\\VolumeSliderAvalonia\\VolumeSliderAvalonia.csproj",
         "packagesPath": "C:\\Users\\t1m3c\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\t1m3c\\OneDrive\\Рабочий стол\\hw9\\VolumeSliderAvalonia\\obj\\",
+        "outputPath": "D:\\dev\\projects\\vuz\\visual-prog\\hw9\\VolumeSliderAvalonia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\dev\\sdk\\msvc\\NuGetPackages"
