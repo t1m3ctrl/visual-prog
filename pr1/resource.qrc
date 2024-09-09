@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/resource"/>
+    <qresource prefix="/">
+        <file>images/icons/circle-svgrepo-com.svg</file>
+        <file>images/icons/circular-cake-graphic-with-quarter-part-cutted-svgrepo-com.svg</file>
+        <file>images/icons/parallelogram-svgrepo-com.svg</file>
+        <file>images/icons/quarter-svgrepo-com.svg</file>
+        <file>images/icons/rectangle-wide-svgrepo-com.svg</file>
+        <file>images/icons/rhombus-svgrepo-com.svg</file>
+        <file>images/icons/square-svgrepo-com.svg</file>
+        <file>images/icons/trapezoid-svgrepo-com.svg</file>
+        <file>images/icons/triangle-svgrepo-com.svg</file>
+        <file>images/figures/circle_5853989.png</file>
+        <file>images/figures/circle_5854033.png</file>
+        <file>images/figures/parallelogram_5853937.png</file>
+        <file>images/figures/rectangle_5853969.png</file>
+        <file>images/figures/rhombus_5853863.png</file>
+        <file>images/figures/square_5854013.png</file>
+        <file>images/figures/trapezoid_5854027.png</file>
+        <file>images/figures/triangle_5854068.png</file>
+        <file>images/formulas/square.png</file>
+        <file>images/formulas/circle.png</file>
+        <file>images/formulas/parallelogramm.png</file>
+        <file>images/formulas/rectangle.png</file>
+        <file>images/formulas/rhombus.png</file>
+        <file>images/formulas/sector.png</file>
+        <file>images/formulas/trapezoid.png</file>
+        <file>images/formulas/triangle.png</file>
+    </qresource>
+</RCC>
